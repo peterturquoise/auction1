@@ -10,6 +10,10 @@ contract BallotTest {
     bytes32[] proposalNames;
 
     Ballot ballotToTest;
+
+    constructor() public {
+    }
+
     function beforeAll () public {
         proposalNames.push(bytes32("candidate1"));
         ballotToTest = new Ballot(proposalNames);
