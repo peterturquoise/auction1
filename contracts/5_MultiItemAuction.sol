@@ -1,11 +1,18 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity <0.9.0;
 
- /**
-   * @title ContractName
-   * @dev ContractDescription
-   * @custom:dev-run-script scripts/deploy_with_web3.ts
-   */
+ 
+   /// @title ContractName
+   /// @author Peter Brooke
+   /// @dev Multi-item aucton contract
+   ///    The auction system should allow users to place bids on items and automatically determine the highest bidder when the auction ends.
+   ///    The smart contract should have the following functionality:
+   ///    1. Initialise the auction with a list of items and their starting bids.
+   ///    2. Allow users to place bids on items.
+   ///    3. Automatically determine the highest bidder for each item when the auction ends.
+   ///
+   /// @custom:dev-run-script scripts/deploy_with_web3.ts
+   ///
 
 contract MultiItemAuction {
 
@@ -43,7 +50,7 @@ contract MultiItemAuction {
             itemIds.push(_itemIds[i]);
         }
     }
-
+    
     function bid(uint itemId) public payable {
         require(items[itemId].active, "Item does not exist or is not active.");
         require(block.timestamp <= auctionEndTime, "Auction already ended.");

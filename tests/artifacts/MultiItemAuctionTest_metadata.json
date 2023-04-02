@@ -110,11 +110,11 @@
 			]
 		},
 		"tests/MultiItemAuction_test.sol": {
-			"keccak256": "0xfb30385000cd35a31f44f87e30de8ffaa8baee3af5a3c6b4b15bc7a5ac5ba3f2",
+			"keccak256": "0xfdaba854c883f2f8bae38e5d3399d3ad671b5785de2d39d5b6fe4de0eac783c9",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4e196b59db2dd2d5194c0ac256f14ed815b8d666b7eb85a27c6acfbbb9ae133d",
-				"dweb:/ipfs/Qme86J9LgJbWJPYZ8vBFbNiB58SJ4bLdLdri2ydxa6QKkq"
+				"bzz-raw://15f9a0b4ac2bc574ca35da0a9f1586a984494a5fcc9ed7b7f0192ecad102f5cb",
+				"dweb:/ipfs/QmYsvnkAgR5e6zErnf4H2s5fKRSX7eoyt64PmCzxarstZN"
 			]
 		}
 	},

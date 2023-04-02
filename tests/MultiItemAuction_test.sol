@@ -38,17 +38,13 @@ contract MultiItemAuctionTest {
         startingBids[0] = 10;
         startingBids[1] = 20;
         startingBids[2] = 30;
-
+console.log("Errrr");
         multiItemAuction = new MultiItemAuction(biddingTime, itemIds, startingBids);
+        console.log("Hiiiii");
         Assert.equal(uint(1), uint(itemIds[0]) , "1 should be equal to itemIds[0] ");
     }
 
     function beforeAll() public {
-        uint a =12;
-
-      //  uint[] memory balance2 = [uint(1), 2, 3];
-
-        uint b = 33;
 
        // uint[] memory balance = [1, 2, 3];
         uint[3] memory arr2;
